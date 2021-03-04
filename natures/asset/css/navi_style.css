@@ -1,0 +1,82 @@
+@import url('common.css');
+
+header{
+    height: 117px;
+}
+nav{
+    width: 1200px;
+    margin: 0 auto;
+}
+#quick-nav{
+    float: right;
+}
+
+#quick-nav ul{
+    display: flex;
+}
+#quick-nav ul li{    
+    background: #242727;
+    margin: 0;
+    padding: 0 15px 0 15px;
+    border: 1px solid #242727;
+    border-top: none;    
+}
+#quick-nav ul li:first-child{
+    background: #ffffff url(/asset/img/icon-home.png)no-repeat 13px center;
+    border-left: 1px solid #4e9c0f;
+    border-bottom: 1px solid #4e9c0f;    
+    padding: 0
+}
+#quick-nav ul li:first-child a{
+    color: #4e9c0f;
+    font-size: 14px;
+    padding: 0 15px 0 35px;
+}
+#quick-nav ul li a{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+}
+#quick-nav ul li:last-child a{
+    color: #ffe34a;
+}
+
+
+
+#main-nav{
+    clear: both;
+}
+#main-nav ul{
+    display: flex;
+}
+#main-nav ul li{
+    margin-left: 150px;
+    height: 85px;
+    line-height: 85px;    
+}
+#main-nav ul li:hover{
+    font-weight: bold;
+}
+#main-nav ul .icon01{
+    background:url(/asset/img/icon-top-nav01.png)no-repeat 0px center;
+    margin-left: 10px;
+}
+#main-nav ul .icon02{
+    background:url(/asset/img/icon-top-nav02.png)no-repeat 0px center;
+}
+#main-nav ul .icon03{
+    background:url(/asset/img/icon-top-nav03.png)no-repeat 0px center;
+}
+#main-nav ul .icon04{
+    background:url(/asset/img/icon-top-nav04.png)no-repeat 0px center;
+}
+#main-nav ul .icon05{
+    background:url(/asset/img/icon-top-nav05_new.png)no-repeat 0px center;
+}
+#main-nav ul li a{
+    font-size: 14px;
+    color: #444444;
+    padding-left: 45px;
+}

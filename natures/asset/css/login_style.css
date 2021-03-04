@@ -1,0 +1,48 @@
+@import url('common.css');
+
+#login{
+    position: relative;
+    height: 750px;
+}
+.login-bg{
+    position: absolute; z-index: -10;
+    left:50%; top:50%; transform:translateY(-50%) translateX(-50%);
+}
+
+.login-box{
+    width: 450px; height: 390px;
+    margin: 0 auto;
+    display: flex; flex-wrap: wrap;
+    justify-content: center; align-items: center;
+    position:absolute ; left:50%; top:50%;
+transform:translateY(-50%) translateX(-50%)
+}
+.login-idpw{
+    width: 290px;
+    margin-right:30px;
+}
+.login-idpw fieldset{
+    width: 295px; border: 0px;
+}
+.login-idpw fieldset legend{
+    margin-bottom: 70px;
+}
+.login-idpw form input{
+    padding: 10px 13px;
+    margin-top: 20px; 
+    width:290px; height:50px;
+    border: 1px solid #ddd;
+}
+.login-ok{
+    margin-top: 160px;
+}
+.login-ok input{
+    background: url(/asset/img/login-btn.png) center no-repeat;
+    width: 116px; height: 123px;
+    border: 0px;
+    cursor: pointer;
+
+}
+.register{
+    margin-top: 30px;
+}

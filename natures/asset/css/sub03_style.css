@@ -1,0 +1,30 @@
+@import url('common.css');
+
+.subMenu{
+    margin-top: 30px;
+}
+
+.subMenu ul{
+    width: 1200px; height: 55px; margin: 0 auto;
+    display: flex; 
+}
+.subMenu ul li{
+    border: 2px solid #ffea3c;
+    border-left: 0px;
+    width: 400px; line-height: 53px;
+}
+.subMenu ul li a{
+    color: #333; width: 100%; height: 100%;
+    display: block; text-align: center;
+}
+.subMenu ul li:first-child{
+    border-left: 2px solid #ffea3c;
+}
+.subMenu ul li.on{
+    background: #ffea3c;
+    font-weight: bold;
+}
+.subContent .borad{
+    width:1200px; margin: 0 auto;
+    padding-top: 50px;
+}

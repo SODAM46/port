@@ -1,0 +1,381 @@
+@import url('common.css');
+
+#mainVisual{
+    height: 100vh;
+    background: url('../img/img_main02.jpg') no-repeat center;
+
+}
+header{
+    padding: 0 5%;
+    height: 80px; width:100%;
+    background: rgba(255,255,255,0.6);
+    display: flex; justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: .5s;
+}
+header:hover{
+    background: #fff;
+}
+header h1 img{
+    width: 200px;
+}
+header .buger{
+    display: none;
+}
+nav .depth01{
+    display: flex;
+    margin-right: 200px;
+}
+nav li{
+    width: 10vw;
+    text-align: center;
+}
+nav li a{
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.depth01 li{
+    position: relative;
+}
+nav .depth02{
+    position: absolute; z-index: 10;
+    left:0 ;top: 250%;
+    padding: 10% 0;
+    width: 100%; 
+    display: none;
+}
+nav .depth02 li{
+    margin-bottom: 10px;
+}
+nav .depth02 li a{
+    color:#666; font-size: 16px;
+}
+.navBox{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; align-items: center;
+    position: fixed; left: 0; top: 0;
+    width:100vw; height: 100vh;
+    background:#fff; z-index: 50;
+    transform: translateX(100%);
+    transition: .5s;
+}
+.navBox a{
+    margin:30px 0;
+    font-size:4vw; color:#333; font-weight: bold;
+}
+.navBox.on{    
+    transform: translateX(0);
+}
+.depthBox{
+    position: absolute;
+    left: 0; top: 100%;
+    border-top:1px solid #ddd;
+    background: #fff;
+    width: 100%; height: 230%;
+    display: none;
+}
+
+header > p{
+    width: 100px;
+    border: 1px solid #116AB2;
+    border-radius: 30px;
+    padding: 7px 25px;
+}
+header > p a{
+    width: 100px;
+    color: #116AB2;
+    font-weight: bold;
+}
+
+.mainTxt{
+    position:absolute ; left:50%; top:50%;
+    transform:translate(-50%,-50%);
+    display: flex; flex-direction: column;
+    text-align:center;
+    overflow: hidden;
+}
+.mainTxt span{
+    color: #fff;
+    font-size: 3vh;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px #000;
+    transform: translateY(150%);
+    animation: txtAni .8s 0.5s forwards;
+}
+.mainTxt span:last-of-type{
+    font-size: 2vw;
+    animation: txtAni 1.5s 0.7s forwards;
+}
+@keyframes txtAni{
+    0%{}
+    100%{transform:translateY(0)}
+}
+.notice{
+    position: absolute;
+    right: 0; bottom:0; 
+    display: flex; align-items: center;
+    height: 60px;
+    background: #000; width: 70%;
+    padding: 15px 0; overflow: hidden;
+}
+.notice p{
+    color: #fff; font-size: 18px;
+    font-weight: bold; padding: 0 30px;
+}
+.notice ul{
+    width: 50%; overflow: hidden;
+    height: 24px;
+}
+.notice ul li{
+    line-height: 30px;
+}
+
+/* 컨텐츠 */
+
+.con01{
+    width: 100%; height: 100vh;
+    background: #F5F5F5;
+    display: flex; flex-direction: column;
+    justify-content: space-around; align-items: center;
+}
+.con01 p{
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+.con01 p em{
+    font-style: normal; font-weight: bold;
+    color: #116AB2; font-size: 1.5em;
+}
+.con01 p strong{
+    font-size: 1.8em;
+}
+.con01 article{
+    display: flex; justify-content: center;
+    padding-bottom: 250px;
+}
+.con01 article div{
+    width:25%; height: 180%; margin: 0 30px;
+    background: #fff;
+    display: flex;flex-direction: column;
+    align-items: center; justify-content: center;
+    transform: translateY(500px);
+    transition: .5s;
+}
+.con01 article div.active{
+    transform: translateY(0);
+    transition: 1.2s;
+}
+.con01 article div:hover{
+    background: #116AB2;
+}
+.con01 article div:hover strong{
+    color: #fff;
+}
+.con01 article div:hover span{
+    color: #fff;
+}
+.con01 article div img{
+    width: 20%;
+}
+.con01 article div strong{
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+.con01 article div span{
+    text-align: center;
+    font-size: 1em;
+}
+.con02{
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.con02 > p{
+    display: flex; flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+.con02 p em{
+    font-style: normal; font-weight: bold;
+    color: #116AB2; font-size: 1.5em;
+}
+.con02 p strong{
+    font-size: 1.8em;
+}
+.con02 article{
+    display: flex; flex-wrap: wrap;
+    width: 80%; justify-content: center;
+}
+.con02 article div{
+    border: 1px solid #999;
+    padding: 30px 0;
+    width: 30%; margin: 50px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: space-between;
+    margin-top: 500px; transition: 1s;
+    opacity: 0;
+}
+.con02 article div.active{
+    margin-top: 0; opacity: 1;
+}
+.con02 article div img{
+    width: 50%;
+}
+.con02 article div p{
+    font-size: 1.3em; font-weight: bold;
+    margin: 10px 0;
+}
+.con02 article div span{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 1em;
+}
+
+.con03{
+    background: url('../img/main_qna02.jpg') no-repeat;
+    height: 300px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.con03 p{
+    font-size: 1.8em; font-weight: bold;
+}
+.con03 a{
+    background: #116AB2; color: #fff;
+    font-size: 1em;
+    border-radius: 50px; padding: 8px 20px;
+    margin-top: 20px;
+}
+
+/* 하단 */
+
+footer{
+    background: #333;
+    height: 200px; padding: 1% 15%;
+    position: relative;
+}
+footer > p{
+    color: #fff; width: 100%;
+    position: relative; margin: 30px 0;
+    font-size: 1em; cursor: pointer;
+}
+footer > p::after{
+    content: ''; display: block;
+    width: 100%; height: 1px;
+    background: #666;position: absolute;
+    bottom: -80%;
+}
+footer span{
+    color:#666; display: block;
+    font-size: 14px;
+}
+
+footer div{
+    position: fixed; left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid#000;
+    background: #fff; padding: 50px;
+    display: none;
+}
+footer div p{
+    position: relative; width: 5%; height: 5%;
+    float: right;
+    cursor: pointer;
+}
+footer div p:after{
+    position: absolute;right: 10px;
+    content: "\2573"; 
+    font-size: 30px; 
+    color: #000;
+}
+footer div > strong{
+    clear: both; font-size: 1.5vw;
+    margin: 50px 0;
+}
+footer div ol {
+    padding: 0;
+}
+footer div ol li{
+    display: flex; flex-direction: column;
+    margin-bottom: 20px;
+}
+footer li strong{
+    font-size:1vw;
+    margin-bottom: 5px;
+}
+footer li em{
+    font-style: normal;
+    white-space: pre-line;
+    font-size: 0.8vw;    
+}
+aside{
+    width: 60px; height: 60px;
+    position: fixed; right: 3%; bottom:5%;
+    display: none;
+}
+aside a{
+    width: 100%; height: 100%;border-radius: 50%;
+    background: #116AB2 url('../img/toparrow_icon2.png') no-repeat center;
+    text-align: center; line-height: 70px;
+}
+
+/* media */
+
+/* @media(max-width:1024px){
+    header nav,p{
+        display: none;
+    }
+    header .buger{
+        display: block; width:30px;
+    }    
+    header .buger {
+        margin-bottom:20px;
+    }
+    header .buger,
+    header .buger span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+    }    
+    header .buger {
+        position: relative;
+        width: 30px; height: 30px;
+        cursor: pointer; z-index: 100;
+    }    
+    header .buger span {
+        position: absolute;
+        width: 100%; height: 2px;
+        background-color: #000;
+    }    
+    header .buger span:nth-of-type(1) {
+        top: 15px;
+    }    
+    header .buger span:nth-of-type(2) {
+        top: 25px;
+    }    
+    header .buger span:nth-of-type(3) {
+        top: 35px;
+    }
+    header .buger.active-1 span:nth-of-type(1) {
+        -webkit-transform: translateY (10px) rotate (-45deg);
+        transform: translateY(10px) rotate(45deg);
+    }    
+    header .buger.active-1 span:nth-of-type(2) {
+        opacity: 0;
+    }    
+    header .buger.active-1 span:nth-of-type(3) {
+        -webkit-transform: translateY(-10px) rotate(45deg);
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .notice{
+        width: 100%;
+    }
+    .notice p{
+        display: block;
+    }
+}
+
+@media(max-width:768px){}
+@media(max-width:480px){} */

@@ -1,0 +1,60 @@
+@import url('common.css');
+
+.cart_wrap{
+    width: 1200px; margin: 0 auto;
+    margin-top: 70px;
+}
+.cart_wrap table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cart_wrap thead tr th{
+    width: 200px;
+    padding: 17px 0;
+    border-bottom: 1px solid #d9e0e7;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: -0.1em;
+    color: #8d9da9;
+    font-weight: normal;
+}
+.cart_wrap thead tr .chk_box{
+    width: 100px;
+    /* padding-right: 70px; */
+}
+
+.cart_wrap tbody tr{
+    width: 1200px; text-align: center;
+    height: 120px;
+    birder
+}
+.cart_wrap tbody tr td{
+    color: #777;
+    font-size: 12px; padding:50px 0;
+    border-bottom: 2px solid #d9e0e7;
+}
+
+.btn_cart_del button{
+    width: 67px; height: 30px;
+    font-size: 12px;
+    padding: 0 8px;
+    border: 1px solid #e2e2e2;
+    border-bottom: 1px solid #c4c4c4;
+    background: #fff; color: #666;
+}
+
+.cart_bck{
+    width: 1200px; margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.cart_bck a{
+    width: 160px; height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-align: center;
+}
